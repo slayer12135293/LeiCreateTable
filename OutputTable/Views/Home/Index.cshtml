@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h1>Table Creator</h1>
 
 @using (Html.BeginForm("Index",  "Home", FormMethod.Post)) {
     @Html.AntiForgeryToken()
@@ -12,7 +12,7 @@
 
 
     <fieldset>
-        <legend>SaveToFileViewModel</legend>
+        <legend>Choose your table properties</legend>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Row)
